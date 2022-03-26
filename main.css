@@ -1,0 +1,22 @@
+body {
+  background: #123c7a;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+#description {
+  font-size: 1.3rem;
+}
+
+#form-card {
+  background: #123c44;
+}
+
+.form-group label {
+  display: block;
+}
