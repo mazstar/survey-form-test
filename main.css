@@ -1,5 +1,5 @@
 :root {
-  --max-width: 700px;
+  --max-width: 550px;
 }
 
 body {
@@ -13,11 +13,12 @@ h1 {
   font-size: 2rem;
 }
 
-#description {
-  font-size: 1.3rem;
+label {
+  padding-top: 0.2rem;
+  padding-bottom: 0.4rem;
 }
 
-#container {
+.container {
   max-width: var(--max-width);
   margin: auto;
   padding: 0 2rem;
@@ -25,6 +26,26 @@ h1 {
   text-align: left;
 }
 
+.first-label {
+  padding-top: 2rem;
+}
+
+.other-label {
+  padding-top: 1rem;
+}
+
 .form-group label {
   display: block;
 }
+
+.form-field {
+  margin-bottom: 0.4rem;
+  padding: 0.3rem;
+  width: 100%;
+}
+
+#description {
+  font-size: 1.3rem;
+}
+
+

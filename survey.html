@@ -10,11 +10,19 @@
 <body>
   <h1 id="title">Test Survey Form</h1>
   <p id="description">What would you like us to improve?</p>
-  <div id="container">
+  <div class="container">
     <form id="survey-form">
       <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name">
+        <label for="name" id="name-label" class="first-label">Name</label>
+        <input type="text" name="name" id="name" class="form-field" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label" class="other-label">Email</label>
+        <input type="email" name="email" id="email" class="form-field" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="age" id="age-label" class="other-label">Age (optional)</label>
+        <input type="number" name="age" id="age" class="form-field" placeholder="Enter your age" min="10" max="100">
       </div>
     </form>
   </div>
