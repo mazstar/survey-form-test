@@ -1,9 +1,11 @@
 :root {
   --max-width: 550px;
+  --back-color: #53729d;
+  --form-color: #374c69;
 }
 
 body {
-  background: #123c7a;
+  background-color: var(--back-color);
   color: #ffffff;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   text-align: center;
@@ -22,7 +24,7 @@ label {
   max-width: var(--max-width);
   margin: auto;
   padding: 0 2rem;
-  background: #123c44;
+  background-color: var(--form-color);
   text-align: left;
 }
 
