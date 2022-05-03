@@ -1,12 +1,17 @@
 :root {
   --max-width: 550px;
-  --back-color: #53729d;
-  --form-color: #374c69;
+  --back-color: rgb(83,114,157);
+  --form-color: rgb(55,76,105);
+  --text-color: rgb(255,255,255);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   background-color: var(--back-color);
-  color: #ffffff;
+  color: var(--text-color);
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   text-align: center;
 }
