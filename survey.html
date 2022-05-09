@@ -29,13 +29,22 @@
       </div>
       <div class="form-group">
         <label for="role" id="role-label" class="other-label">What is your role?</label>
-        <select name="role" id="role" class="form-field" required>
+        <select name="role" id="role-dropdown" class="form-field" required>
           <option value="" disabled selected hidden>Select current role</option>
           <option value="student">Student</option>
           <option value="employed">Employed</option>
           <option value="unemployed">Not Employed</option>
           <option value="other">Prefer not to say</option>
         </select>
+      </div>
+      <div class="form-group">
+        <label for="recommend" id="recommend-label" class="other-label">Would you recommend us to a friend?</label>
+        <input type="radio" name="recommend" id="definitely" checked>
+        <label for="definitely" class="option-label">Definitely</label><br>
+        <input type="radio" name="recommend" id="maybe">
+        <label for="maybe" class="option-label">Maybe</label><br>
+        <input type="radio" name="recommend" id="no">
+        <label for="no" class="option-label">No</label><br>
       </div>
     </form>
   </div>

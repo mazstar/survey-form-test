@@ -35,13 +35,11 @@ label {
 
 .first-label {
   padding-top: 2rem;
+  display: block;
 }
 
 .other-label {
   padding-top: 1rem;
-}
-
-.form-group label {
   display: block;
 }
 
