@@ -49,6 +49,10 @@ label {
   width: 100%;
 }
 
+.radio-buttons {
+  padding: 0.3rem;
+}
+
 #description {
   font-size: 1.3rem;
 }
