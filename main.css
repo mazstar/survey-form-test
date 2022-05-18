@@ -53,8 +53,15 @@ label {
   padding: 0.3rem;
 }
 
+.btn {
+  display: block;
+}
+
 #description {
   font-size: 1.3rem;
 }
 
+#comments {
+  width: 100%;
+}
 
