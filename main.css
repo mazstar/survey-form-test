@@ -3,6 +3,7 @@
   --back-color: rgb(83,114,157);
   --form-color: rgb(55,76,105);
   --text-color: rgb(255,255,255);
+  --button-color: rgb(99,163,84);
 }
 
 * {
@@ -53,9 +54,6 @@ label {
   padding: 0.3rem;
 }
 
-.btn {
-  display: block;
-}
 
 #description {
   font-size: 1.3rem;
@@ -65,3 +63,14 @@ label {
   width: 100%;
 }
 
+#submit {
+  display: inline-block;
+  width: 100%;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
