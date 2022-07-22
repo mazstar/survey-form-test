@@ -26,10 +26,6 @@ h1 {
   font-size: 2rem;
 }
 
-label {
-  padding: 0.2rem 0 0.4rem 0;
-}
-
 /* Main container */
 .main-container {
   background: url('img/alesia-kazantceva-XLm6-fPwK5Q-unsplash.jpg') center center/cover no-repeat;
@@ -71,14 +67,14 @@ label {
   z-index: 1;
 }
 
-.surveyForm-firstLabel {
-  display: block;
-  padding-top: 2rem;
-}
-
 .surveyForm-label {
   display: block;
+  padding: 0.2rem 0 0.4rem 0;
   padding-top: 1rem;
+}
+
+.surveyForm-label--firstLabel {
+ padding-top: 2rem;
 }
 
 .surveyForm-field {
