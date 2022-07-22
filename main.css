@@ -1,3 +1,5 @@
+/* CSS uses .<module>[-<component>][-<state>][--modifier] {} convention */
+
 /* Variables */
 :root {
   --back-color: rgb(83,114,157);
