@@ -58,6 +58,10 @@ h1 {
 }
 
 /* Survey Form */
+.surveyForm-question {
+  font-size: 1.3rem;
+}
+
 .surveyForm-container {
   background-color: var(--form-color);
   border-radius: 3px;
@@ -72,11 +76,15 @@ h1 {
 .surveyForm-label {
   display: block;
   padding: 0.2rem 0 0.4rem 0;
-  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 .surveyForm-label--firstLabel {
  padding-top: 2rem;
+}
+
+.surveyForm-optionQuestion {
+  margin-top: 1rem;
 }
 
 .surveyForm-field {
@@ -87,11 +95,6 @@ h1 {
 
 .surveyForm-radioButtons {
   padding: 0.3rem;
-}
-
-
-.surveyForm-question {
-  font-size: 1.3rem;
 }
 
 .surveyForm-textarea {
