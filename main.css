@@ -88,9 +88,15 @@ h1 {
 }
 
 .surveyForm-field {
+  border: none;
+  border-radius: 2px;
   margin-bottom: 0.4rem;
   padding: 0.3rem;
   width: 100%;
+}
+
+.surveyForm-field:focus {
+  outline: none;
 }
 
 .surveyForm-radioButtons {
@@ -98,7 +104,13 @@ h1 {
 }
 
 .surveyForm-textarea {
+  border: none;
+  border-radius: 2px;
   width: 100%;
+}
+
+.surveyForm-textarea:focus {
+  outline: none;
 }
 
 .surveyForm-submit {
