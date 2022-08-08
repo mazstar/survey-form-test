@@ -32,7 +32,6 @@ h1 {
 .main-container {
   background: url('img/alesia-kazantceva-XLm6-fPwK5Q-unsplash.jpg') center center/cover no-repeat;
   position: relative;
-  z-index: -1;
 }
 
 .main-container::after {
@@ -106,6 +105,7 @@ h1 {
   color: var(--text-color);
   border: none;
   border-radius: 5px;
+  cursor: pointer;
   display: inline-block;
   margin: 1rem 0 4rem 0;
   padding: 0.5rem;
