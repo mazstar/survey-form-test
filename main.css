@@ -5,6 +5,7 @@
   --back-color: rgb(83,114,157);
   --back-color-opacity: rgb(83,114,157,0.6);
   --button-color: rgb(99,163,84);
+  --button-hover-color: rgb(79,130,67);
   --form-color: rgb(55,76,105);
   --max-width: 550px;
   --text-color: rgb(255,255,255);
@@ -110,4 +111,8 @@ h1 {
   margin: 1rem 0 4rem 0;
   padding: 0.5rem;
   width: 100%;
+}
+
+.surveyForm-submit:hover {
+  background-color: var(--button-hover-color);
 }
