@@ -22,25 +22,30 @@ function handleFormSubmission(e) {
   console.log(`Age is ${ageInput.value}`);
   console.log(`Role is ${roleInput.value}`);
 
+  localStorage.setItem('name', nameInput.value);
+  localStorage.setItem('email', emailInput.value);
+  localStorage.setItem('age', ageInput.value);
+  localStorage.setItem('role', roleInput.value);
+
   for(i = 0; i < recommendInput.length; i++) {
     if(recommendInput[i].checked) {
       console.log(`Option to recommend is ${recommendInput[i].value}`);
+      localStorage.setItem('recommendation', recommendInput[i].value);
     }
   }
 
   console.log(`Favourite feature is ${featureInput.value}`);
+  localStorage.setItem('feature', featureInput.value);
 
   for(i = 0; i < improvementInput.length; i++) {
     if(improvementInput[i].checked) {
       console.log(`Suggestion to improve is ${improvementInput[i].value}`);
+      localStorage.setItem(`improvement_${i}`, improvementInput[i].value);
     }
   }
 
   console.log(`Comment is ${commentsInput.value}`);
-
-  //localStorage.setItem('data', "Hello");
-
-    
+  localStorage.setItem('comment', commentsInput.value);
   
   e.preventDefault();
 }
