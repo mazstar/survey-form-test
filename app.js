@@ -16,12 +16,7 @@ const commentsInput = document.getElementById('comments');
 form.addEventListener('submit', handleFormSubmission);
 
 function handleFormSubmission(e) {
-  console.log('Form submitted!');
-  console.log(`Name is ${nameInput.value}`);
-  console.log(`Email is ${emailInput.value}`);
-  console.log(`Age is ${ageInput.value}`);
-  console.log(`Role is ${roleInput.value}`);
-
+  
   localStorage.setItem('name', nameInput.value);
   localStorage.setItem('email', emailInput.value);
   localStorage.setItem('age', ageInput.value);
@@ -29,22 +24,20 @@ function handleFormSubmission(e) {
 
   for(i = 0; i < recommendInput.length; i++) {
     if(recommendInput[i].checked) {
-      console.log(`Option to recommend is ${recommendInput[i].value}`);
       localStorage.setItem('recommendation', recommendInput[i].value);
     }
   }
 
-  console.log(`Favourite feature is ${featureInput.value}`);
   localStorage.setItem('feature', featureInput.value);
 
+  let improvements = [];
   for(i = 0; i < improvementInput.length; i++) {
     if(improvementInput[i].checked) {
-      console.log(`Suggestion to improve is ${improvementInput[i].value}`);
-      localStorage.setItem(`improvement_${i}`, improvementInput[i].value);
+      improvements.push(improvementInput[i].value);
     }
   }
+  localStorage.setItem('improvements', JSON.stringify(improvements));
 
-  console.log(`Comment is ${commentsInput.value}`);
   localStorage.setItem('comment', commentsInput.value);
   
   e.preventDefault();
