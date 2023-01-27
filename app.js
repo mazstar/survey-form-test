@@ -39,6 +39,8 @@ function handleFormSubmission(e) {
   localStorage.setItem('improvements', JSON.stringify(improvements));
 
   localStorage.setItem('comment', commentsInput.value);
+
+  document.querySelector('#survey-form').remove();
   
   e.preventDefault();
 }
