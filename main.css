@@ -49,6 +49,7 @@ h1 {
   width: 100%;
 }
 
+
 /* Header */
 .invitation {
   margin-bottom: 2rem;
@@ -127,4 +128,12 @@ h1 {
 
 .surveyForm-submit:hover {
   background-color: var(--button-hover-color);
+}
+
+/* Thank you page */
+.thanks-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
