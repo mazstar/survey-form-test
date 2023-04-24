@@ -39,6 +39,20 @@ function handleFormSubmission(e) {
   localStorage.setItem('improvements', JSON.stringify(improvements));
 
   localStorage.setItem('comment', commentsInput.value);
+
+  document.querySelector('#formPage-container').remove();
+
+  //Now add a div with class thanks-container and a p1 with Thankyou text
+  const div = document.createElement('div');
+  const heading1 = document.createElement('h1');
+  const text = document.createTextNode('Thank you!');
+
+  div.className = 'thanks-container';
+  
+  heading1.appendChild(text);
+  div.appendChild(heading1);
+  document.body.appendChild(div);
+
  
   e.preventDefault();
 }
