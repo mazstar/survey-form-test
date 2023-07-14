@@ -138,3 +138,7 @@ h1 {
   transform: translateX(-50%) translateY(-50%);
 }
 
+.thanks-container ul {
+  list-style: none;
+}
+

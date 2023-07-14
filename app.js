@@ -11,6 +11,7 @@ const improvementInput = document.getElementsByName('improvement-suggestion');
 const commentsInput = document.getElementById('comments');
 
 
+
 // Listeners
 // btnSubmit.addEventListener('click', handleFormSubmission);
 form.addEventListener('submit', handleFormSubmission);
@@ -42,7 +43,7 @@ function handleFormSubmission(e) {
 
   document.querySelector('#formPage-container').remove();
 
-  //Now add a div with class thanks-container and a p1 with Thankyou text
+  //Now add a div with class thanks-container and a h1 tag with thankyou text
   const div = document.createElement('div');
   const heading1 = document.createElement('h1');
   const text = document.createTextNode('Thank you!');
@@ -52,6 +53,20 @@ function handleFormSubmission(e) {
   heading1.appendChild(text);
   div.appendChild(heading1);
   document.body.appendChild(div);
+
+  // Display the items from local storage - incomplete
+  const datalist = document.createElement('ul');
+  div.appendChild(datalist);
+  document.body.appendChild(div);
+
+  let name;
+  name = localStorage.getItem('name');
+  console.log(name);
+  const li = document.createElement('li');
+  li.appendChild(document.createTextNode(name));
+  datalist.appendChild(li);
+  
+
 
  
   e.preventDefault();
