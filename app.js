@@ -59,15 +59,12 @@ function handleFormSubmission(e) {
   div.appendChild(datalist);
   document.body.appendChild(div);
 
-  let name;
-  name = localStorage.getItem('name');
-  console.log(name);
-  const li = document.createElement('li');
-  li.appendChild(document.createTextNode(name));
-  datalist.appendChild(li);
   
-
-
+  const name = localStorage.getItem('name');
+  const liName = document.createElement('li');
+  liName.appendChild(document.createTextNode(name));
+  datalist.appendChild(liName);
+  
  
   e.preventDefault();
 }
